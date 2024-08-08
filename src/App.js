@@ -1,14 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import SignupPage from './pages/SignupPage'
+import { Routes, Route } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import PaymentPage from './pages/PaymentPage'
 
 function App() {
   return (
-    <Router>
+    <>
       <Routes>
-        <Route path='/' element={<SignupPage />} />
+        <Route path='/' element={<PaymentPage />} />
       </Routes>
-    </Router>
-
+      <ToastContainer />
+    </>
   )
 }
 
