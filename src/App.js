@@ -1,30 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import SignupPage from './pages/SignupPage'
+
+import SignupPage from './pages/SignupPage/SignupPage'
+
 function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-
-        <Route path='/landing' element={<LandingPage />} />
-
-        <Route path='/product' element={<ProductPage />} />
-        <Route path='/gadget-store' element={<GadgetStorePage />} />
-        <Route path='/appliances' element={<AppliancesPage />} />
-
-        <Route path='/for-him' element={<ForHimPage />} />
-        <Route path='/home' element={<HomePage />} />
-        <Route path='/for-her' element={<ForHerPage />} />
-        <Route path='/beauty' element={<BeautyPage />} />
-        <Route path='/checkout' element={<CheckoutPage />} />
-        <Route path='/shopNow' element={<ShopNow />} />
-        <Route path='/seeAll' element={<SeeAllPage />} />
-        <Route path='/officialStore' element={<OfficialStore />} />
-        <Route path='/signup' element={<SignupPage />} />
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/payment' element={<PaymentPage />} />
+        <Route path='/' element={<SignupPage />} />
       </Routes>
       <ToastContainer />
     </>
