@@ -6,7 +6,25 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<SignupPage />} />
+        <Route path='/' element={<LandingPage />} />
+
+        <Route path='/landing' element={<LandingPage />} />
+
+        <Route path='/product' element={<ProductPage />} />
+        <Route path='/gadget-store' element={<GadgetStorePage />} />
+        <Route path='/appliances' element={<AppliancesPage />} />
+
+        <Route path='/for-him' element={<ForHimPage />} />
+        <Route path='/home' element={<HomePage />} />
+        <Route path='/for-her' element={<ForHerPage />} />
+        <Route path='/beauty' element={<BeautyPage />} />
+        <Route path='/checkout' element={<CheckoutPage />} />
+        <Route path='/shopNow' element={<ShopNow />} />
+        <Route path='/seeAll' element={<SeeAllPage />} />
+        <Route path='/officialStore' element={<OfficialStore />} />
+        <Route path='/signup' element={<SignupPage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/payment' element={<PaymentPage />} />
       </Routes>
       <ToastContainer />
     </>
